@@ -50,7 +50,10 @@ public class Lampa {
                System.out.println("A lámpa erőssebben világít"); 
             }
             case VILLOG{
-                sout
+                System.out.println("A lampa idoszerunkent villog");
+            }
+            case VELETSZERUEN_VILLOG{
+                System.out.println("A  lampa nem meghatározott időkent villog");
             }
              default KIKAPCSOL{
                 System.out.println("A lampa kikapcsolva");
@@ -70,10 +73,10 @@ public class Lampa {
         return szam;
     }
     public void mukodes(){
-        boolean megnyomod_e =true;
-       while(megnyomod_e){
-           
-       }
+        for (int i = 0; i < 10; i++) {
+            gombnyomas();
+            allapotok();
+        }
            
     }
 }
